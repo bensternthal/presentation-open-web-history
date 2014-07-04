@@ -2,8 +2,8 @@
 
 // variables!
 
-slide_width = 640px
-slide_height = 480px
+slide_width = 100%
+slide_height = 100%
 slide_background = #eaeaea
 
 slide_transition_length = .6s
@@ -56,19 +56,12 @@ article
     background slide_transition_length slide_transition_easing
   transform-origin: 50% 50% 0
   backface-visibility: hidden
-  display: flex
-  flex-direction: column
-  justify-content: center
-  align-items: center
-  text-align: center
   width: slide_width
   height: slide_height
   position: absolute
-  top: 50%
-  margin-top: (slide_height / 2) * -1
-  left: 50%
-  margin-left: (slide_width / 2) * -1
   background: slide_background
+  background-position: center center
+  background-size: cover
   padding: 40px
   border-radius: 0
   @media print
@@ -93,6 +86,7 @@ article
 .bespoke-inactive
   opacity: 0
   pointer-events: none
+  display: none;
   @media print
     opacity 1
 
@@ -165,8 +159,8 @@ pre
 // content styles
 
 body
-  font-family: helvetica, arial, sans-serif
-  font-size: 18px
+  font-family: 'Source Sans Pro', sans-serif
+  font-size: 24px
   color: #404040
 
 h1
@@ -179,6 +173,7 @@ h2
   font-size: 42px
   letter-spacing: -1px
   margin-bottom: 8px
+  border-bottom: 2px solid #404040
 
 h3
   font-size: 24px
@@ -197,9 +192,24 @@ li
   margin-bottom: 12px
 
 p
-  margin: 0 100px 12px
+  margin: 0 0 1.8em 0
   line-height: 22px
 
 a
   color: #0089f3
   text-decoration: none
+
+.giffy
+  color: #FFFFFF
+
+.giffy h2
+  color: #FFFFFF
+  border-bottom: 5px solid #ffffff
+
+.no-border
+  border: none !important
+
+.bespoke-slide aside
+    display: none;
+
+
