@@ -1,6 +1,7 @@
 doctype html
 html
   head
+    link(rel='stylesheet', type='text/css', href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900,300italic')
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
     title History Of Open Web Standards
@@ -14,29 +15,40 @@ html
   body
 
     article
+      //.giffy(style="background-image: url(/images/yogscast.gif)")
+      section.giffy(style="background-image: url(/images/7mkU7FK.gif)")
+        h1 Open Web Technologies:<br> A History & Introduction
+        aside
+          h2 I must remember to mention this, and then that.
 
       section
-        h1 History Of Open Web Standards
+        h2 An Open Skill Session For Engagement
+        h3 Presented By:
+          p
+            img(src='/images/bensternthal.jpg', height='100') 
+            <br>
+            |Benjamin Sternthal @bensternthal - History
+          p
+            img(src='/images/Craig-Cook.jpg', height='100') 
+            <br>            
+            |Craig Cook @craigcook - {Insert Summary}
+          p
+            img(src='/images/billwalker.jpg', height='100') 
+            <br>              
+            |Bill Walker @wfwalker - {Insert Summary}
+        aside
+          h2 I must remember to mention this, and then thd            
 
       section
-        h2 Keyboard Interaction
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-keys">bespoke-keys</a>
+        h2 Leave Here Understanding....
+        p Attendees should leave this talk with an understanding of 
+          Open Web Stack and why these technologies are important. People will also learn about some of the technical implementations of the open web in Firefox OS and marketplace.
+
+      section.giffy(style="background-image: url(/images/charlie-1.gif)")
+        h2.no-border Let's go!
 
       section
-        h2 Touch Interaction
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-touch">bespoke-touch</a>
-
-      section
-        h2 Responsive Slides
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-scale">bespoke-scale</a>
-
-      section
-        h2 Bullet List
-        h3.bullet Powered by <a href="https://github.com/markdalgleish/bespoke-bullets">bespoke-bullets</a>
-        ul
-          li Bullet 1
-          li Bullet 2
-          li Bullet 3
+        h2.no-border Let's go!
 
       section
         h2 Syntax Highlighting
@@ -84,5 +96,8 @@ html
     script(src='bower_components/bespoke-progress/dist/bespoke-progress.min.js')
     script(src='bower_components/bespoke-state/dist/bespoke-state.min.js')
     script(src='bower_components/prism/prism.js')
+    script(src='bower_components/bespoke-convenient/dist/bespoke-convenient.min.js')
+    script(src='bower_components/bespoke-indexfinger/dist/bespoke-indexfinger.min.js')
+    script(src='bower_components/bespoke-secondary/dist/bespoke-secondary.min.js')
     script(src='scripts/main.js')
     // endbuild
