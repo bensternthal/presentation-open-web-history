@@ -22,6 +22,7 @@ html
       section
         h2 An Open Skill Session For Engagement
         h3 Presented By:
+          hr
           p
             img(src='/images/bensternthal.jpg', height='100') 
             <br>
@@ -36,55 +37,99 @@ html
             |Bill Walker @wfwalker - {Insert Summary}
         aside
           h2 People Introductions What They Do
-            | Craig Cook is a senior front end engineer on the Brand team
-            | BIll          
+            |Craig Cook is a senior front end engineer on the Brand team
+            |Bill stuff
+            |{what will you get out of this talk}
+            |Setup next slide.. do whatever you need to do to stay awake    
+
+  
+      section.giffy(style="background-image: url(/images/glue.gif)")
 
       section
-        h2 Leave Here Understanding....
-        p Attendees should leave this talk with an understanding of 
-          Open Web Stack and why these technologies are important. People will also learn about some of the technical implementations of the open web in Firefox OS and marketplace.
-
-      section.giffy(style="background-image: url(/images/charlie-1.gif)")
-        h2 Let's go!
-
-      section
-        h2.no-border Let's go!
-
-      section
-        h2 Syntax Highlighting
-        h3 Powered by <a href="http://twitter.com/LeaVerou">Lea Verou</a>'s <a href="https://github.com/LeaVerou/prism">Prism</a>
-        hr
-        pre
-          code.language-javascript.
-            bespoke.from('article', {
-              keys: true,
-              touch: true,
-              hash: true,
-              state: true,
-              bullets: 'li, .bullet'
-            });
-
-      section(data-bespoke-hash='named-route')
-        h2 Named Route
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a>
-        p Look up! This route has been named with a <em>'data-bespoke-hash'</em> attribute.
-
-      section(data-bespoke-state='emphatic')
-        h2 Emphatic Slide!
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-state">bespoke-state</a>
-
-      section
-        h2.bullet Just the beginning...
-        hr
+        h2.bullet This is a story...
         ul
-          li Edit <a href="http://jade-lang.com/">Jade</a> markup in <em>'src/index.jade'</em>
-          li Edit <a href="http://learnboost.github.io/stylus/">Stylus</a> styles in <em>'src/styles/main.styl'</em>
-          li Edit JavaScript in <em>'src/scripts/main.js'</em>
-        hr
-        ul
-          li
-            strong Enjoy! :)
-            a(href='http://twitter.com/markdalgleish')  -@markdalgleish
+          li About the Mozilla Manifesto
+          li ....
+          li And 
+
+      section
+        h2 Manifesto stuff
+        p . The Manifesto sets out a vision of the Internet as a piece of infrastructure that is open, a
+          !ccessible and enriches the lives of individual human beings. I
+        p https://blog.lizardwrangler.com/2007/02/13/introducing-the-mozilla-manifesto/
+        p This came about in 2007
+        p what happened that lead us here
+
+      section
+        h2 Why Are Open Standards Critical For The Open Web
+          p Its the only non-proprietarty platform. No one owns it.
+          p Write once run over.
+          p standards == higher change it will run in the future.
+          p fragmentation is not an issue
+
+      section
+        h2 Something About The Late 90s 
+          p IE4 & Netscape
+          p Best viewed in
+          p Proprietary feateures = build a version for each browser
+          p 
+
+      section
+        h2 IE
+
+
+      section.giffy(style="background-image: url(/images/manifesto.png)")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      //- section
+      //-   h2 Syntax Highlighting
+      //-   h3 Powered by <a href="http://twitter.com/LeaVerou">Lea Verou</a>'s <a href="https://github.com/LeaVerou/prism">Prism</a>
+      //-   hr
+      //-   pre
+      //-     code.language-javascript.
+      //-       bespoke.from('article', {
+      //-         keys: true,
+      //-         touch: true,
+      //-         hash: true,
+      //-         state: true,
+      //-         bullets: 'li, .bullet'
+      //-       });
+
+      //- section(data-bespoke-hash='named-route')
+      //-   h2 Named Route
+      //-   h3 Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a>
+      //-   p Look up! This route has been named with a <em>'data-bespoke-hash'</em> attribute.
+
+      //- section(data-bespoke-state='emphatic')
+      //-   h2 Emphatic Slide!
+      //-   h3 Powered by <a href="https://github.com/markdalgleish/bespoke-state">bespoke-state</a>
+
+      //- section
+      //-   h2.bullet Just the beginning...
+      //-   hr
+      //-   ul
+      //-     li Edit <a href="http://jade-lang.com/">Jade</a> markup in <em>'src/index.jade'</em>
+      //-     li Edit <a href="http://learnboost.github.io/stylus/">Stylus</a> styles in <em>'src/styles/main.styl'</em>
+      //-     li Edit JavaScript in <em>'src/scripts/main.js'</em>
+      //-   hr
+      //-   ul
+      //-     li
+      //-       strong Enjoy! :)
+      //-       a(href='http://twitter.com/markdalgleish')  -@markdalgleish
 
     // build:js scripts/scripts.js
     script(src='bower_components/bespoke.js/dist/bespoke.min.js')
