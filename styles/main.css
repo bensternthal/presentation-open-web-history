@@ -57,39 +57,14 @@ article.bespoke-parent {
   -moz-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
   backface-visibility: hidden;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-box;
-  display: -webkit-flex;
-  display: box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  -o-box-orient: vertical;
-  -ms-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  -o-box-pack: center;
-  -ms-box-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  -o-box-align: center;
-  -ms-box-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  text-align: center;
-  width: 640px;
-  height: 480px;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  top: 50%;
-  margin-top: -240px;
-  left: 50%;
-  margin-left: -320px;
-  background: #eaeaea;
+  background: #eaeaea no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
   padding: 40px;
   -webkit-border-radius: 0;
   border-radius: 0;
@@ -110,11 +85,11 @@ article.bespoke-parent {
   }
 }
 .bespoke-before {
-  -webkit-transform: translateX(100px) translateX(-320px) rotateY(-90deg) translateX(-320px);
-  -moz-transform: translateX(100px) translateX(-320px) rotateY(-90deg) translateX(-320px);
-  -o-transform: translateX(100px) translateX(-320px) rotateY(-90deg) translateX(-320px);
-  -ms-transform: translateX(100px) translateX(-320px) rotateY(-90deg) translateX(-320px);
-  transform: translateX(100px) translateX(-320px) rotateY(-90deg) translateX(-320px);
+  -webkit-transform: translateX(100px) translateX(-50%) rotateY(-90deg) translateX(-50%);
+  -moz-transform: translateX(100px) translateX(-50%) rotateY(-90deg) translateX(-50%);
+  -o-transform: translateX(100px) translateX(-50%) rotateY(-90deg) translateX(-50%);
+  -ms-transform: translateX(100px) translateX(-50%) rotateY(-90deg) translateX(-50%);
+  transform: translateX(100px) translateX(-50%) rotateY(-90deg) translateX(-50%);
 }
 @media print {
   .bespoke-before {
@@ -126,11 +101,11 @@ article.bespoke-parent {
   }
 }
 .bespoke-after {
-  -webkit-transform: translateX(-100px) translateX(320px) rotateY(90deg) translateX(320px);
-  -moz-transform: translateX(-100px) translateX(320px) rotateY(90deg) translateX(320px);
-  -o-transform: translateX(-100px) translateX(320px) rotateY(90deg) translateX(320px);
-  -ms-transform: translateX(-100px) translateX(320px) rotateY(90deg) translateX(320px);
-  transform: translateX(-100px) translateX(320px) rotateY(90deg) translateX(320px);
+  -webkit-transform: translateX(-100px) translateX(50%) rotateY(90deg) translateX(50%);
+  -moz-transform: translateX(-100px) translateX(50%) rotateY(90deg) translateX(50%);
+  -o-transform: translateX(-100px) translateX(50%) rotateY(90deg) translateX(50%);
+  -ms-transform: translateX(-100px) translateX(50%) rotateY(90deg) translateX(50%);
+  transform: translateX(-100px) translateX(50%) rotateY(90deg) translateX(50%);
 }
 @media print {
   .bespoke-after {
@@ -146,6 +121,7 @@ article.bespoke-parent {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   pointer-events: none;
+  display: none;
 }
 @media print {
   .bespoke-inactive {
@@ -267,8 +243,8 @@ pre {
   border-radius: 8px;
 }
 body {
-  font-family: helvetica, arial, sans-serif;
-  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 24px;
   color: #404040;
 }
 h1 {
@@ -281,6 +257,7 @@ h2 {
   font-size: 42px;
   letter-spacing: -1px;
   margin-bottom: 8px;
+  border-bottom: 2px solid #404040;
 }
 h3 {
   font-size: 24px;
@@ -299,10 +276,33 @@ li {
   margin-bottom: 12px;
 }
 p {
-  margin: 0 100px 12px;
+  margin: 0 0 1.8em 0;
   line-height: 22px;
 }
 a {
   color: #0089f3;
   text-decoration: none;
+}
+.giffy {
+  color: #fff;
+}
+.giffy h2 {
+  color: #fff;
+  border-bottom: 5px solid #fff;
+}
+.giffy-fit {
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+}
+.no-border {
+  border: none !important;
+}
+.bespoke-slide aside {
+  display: none;
+}
+.quote {
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 1.5em;
 }
