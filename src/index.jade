@@ -32,33 +32,64 @@ html
             <br>            
             |Craig Cook @craigcook - {Insert Summary}
           p
+            {10 Minute Break}
+          p
             img(src='images/billwalker.jpg', height='100') 
             <br>              
             |Bill Walker @wfwalker - {Insert Summary}
         aside
-          h2 People Introductions What They Do
-            |Craig Cook is a senior front end engineer on the Brand team
-            |Bill stuff
-            |{what will you get out of this talk}
+          pre
+            |People Introductions What They Do<br>
+
+            |I will be talking about history<br>
+
+            |Craig Cook is a senior front end engineer on the Brand team and will be talking
+            |about {} <br>
+
+            |Bill Walker is a senior manager apps engineering and will talk about open standards and
+            |firefox os.<br>
+            
+            |We hope you leave this talk with a better understanding of...
+            |why web standards are so important, how ideas become standards, and the role of standards
+            |in our projects.<br>
+
             |Setup next slide.. do whatever you need to do to stay awake    
 
   
       section.giffy(style="background-image: url(images/glue.gif)")
 
-      section
-        h2.bullet This Is A Brief History
-        ul
-          li Of how open standards came to be ...
-          li and 
-          li ... how the battle fought on the desktop is now being fought on our phones.
-
       section.giffy(style="background-image: url(images/manifesto.png)")
         aside
-          |We can talk about tcp ip etc
-          
+          pre
+            |Before we jump in, I want to take a moment to talk about how important web standards are.
+            <br>
+            |They are so important that they were added as a specific item #6 what you see here to the manifesto.
+            <br>
+            | 
+
+      section
+        h2.bullets The Web Is A Public Resource
+        ul
+          li Interoperability
+          li Decentralized Participation
+          li
+            strong And my two cents...
+          li cost of participation low
+          li fragmentation not an issue
+          li write once run (mostly anywhere)
+          li no Gatekeepers    
+          li Runs on Non Proprietary Standards!
+        aside
+          pre
+            |This really describes the web that we have today. Talk about creating a website.
+            <br>
+            |This does not describe mobile - explain why.               
+
+      section
+        h2 Let's Start At The Beginning
 
       section.giffy(style="background-image: url(images/Tim-Berners-Lee.png)")
-        h2 Out Story Begins On 8/19/91
+        h2 comp.sys.next.announce:    8/19/91
         strong      
           |This project is experimental and of course comes without any warranty  
           |whatsoever. However, it could start a revolution in information access. We are  
@@ -67,13 +98,17 @@ html
           |available, as part of a truly world-wide web. 
 
         aside
-          |COVER THE BIRTH OF STANDARDS
-          |Tim-Berners-Lee original post to usenet announcing public release of WorldWideWeb hypertext browser/editor.
-          |Even here you can see the seeds of collaboration.
-          <br>
-          | Note way before this open standards had been succesfull note tcp/ip from 1979
-          <br>
-          | Layering of open standards on existing open standards.
+          pre
+            |Everyone knows this guy right?
+            <br>
+            |At the very beginning we start to see an approach or philosophy of openess that 
+            |would later became an inegral part
+            |of the web.
+            <br>
+            | Note way before this open standards had been succesfull note tcp/ip from 1979
+            <br>
+            | Layering of open standards on existing open standards.          
+
 
       section
         h2.bullet After That Things Moved Quickly
@@ -102,27 +137,52 @@ html
 
  
       section
-        h2 W3C & Web Standards  
+        h2.bullets What is A Standard?  
         ul
-          li What Is W3C: Standards Organization... Publishes 'strong' recommendations.
-          li What Is A Standard?
-          li What Is The Scope Of Their Work
+          li A Mix Of Standards (JS) & Recommendations (HTML/CSS)
+          li Not All Standards Are Equal
+          li 
+            strong Standard Bodies
+          li W3C, IETF, ISO, ECMA, Unicode Consortium, IANA
           li Tries To Get Vendors To Agree
           li Standards Making Is Slow Process...
         aside
-          |W3C founded to lead the World Wide Web to its full potential by developing protocols and 
-          |guidelines that ensure the long-term growth of the Web. Without it the web would have been driven
-          | by whomever had the most market share.            
-          <br>
-          |W3C {EXPLAIN STANDARDS HERE AND SCOPE}
-          |Note w3c does not publish strict standards but rather strong recommendations.
-          |IE rapidly overtook netscape in market penetration. 1st browser war saw ms throwing money
-          |at IE and dominating the market. Even though we had an establised method for evolving standards
-          |ms went there own way.
+          pre
+            |What is a standard. For us standar            
+            <br>
+            |W3C {EXPLAIN STANDARDS HERE AND SCOPE}
+            |Note w3c does not publish strict standards but rather strong recommendations.
+            |IE rapidly overtook netscape in market penetration. 1st browser war saw ms throwing money
+            |at IE and dominating the market. Even though we had an establised method for evolving standards
+            |ms went there own way.
+
+      section
+        h2.bullets How Do Things Become Standards?
+        ul
+          li 
+            strong For W3C Generally
+          li Working Draft
+          li Candidate Recommendation
+          li Proposed Recommendation
+          li W3C Recommendation
+          li But They Work - XMLHttpRequest & WebRTC   
+          li Slow! HTML5 'Started' in 2008, Stable Recommendation Expected 2014! 
+        aside 
+          pre
+            |So we have a way of formulating the rules. And the advantages to following the rules
+            |are what's described in the manifesto. Interoperability - non Proprietary standards.
+            <br>
+            |But what happens when you do not follow the rules.                  
 
 
       section
-          h2 Case Study: Let's Talk About Microsoft In The Late 90's and Early 2000's 
+          h2 Let's Talk About Microsoft In The Late 90's and Early 2000's 
+          aside
+            pre
+              |Microsoft dominated the browser market and used their dominance to implment Proprietary
+              |features. Developers would spend the majority of their time on the browser with
+              |the most eyeballs. Solidifying their market share.
+
           
       section.giffy-fit(style="background-image: url(images/ie.gif)")
 
@@ -132,6 +192,9 @@ html
         img(src='images/border-box-model.png') 
         aside
           |IE bundles a ton of Proprietary features, ignores W3c recommendations. 
+          <br>
+          |imagine coding for ie, you have to now code once for ie and again for other browsers following
+          |w3c recs. what happens when there are even more browsers on the market.. or mobile?
 
       section.giffy(style="background-image: url(images/yogscast.gif)")
         h2 Creates A Nightmare For Developers
@@ -147,8 +210,18 @@ html
           |Supporting multiple versions of IE became even more of a pain.
           |Not just IE vs Netscape but IE6 vs IE7 vs IE8 vs Nestscape 
 
+      section.giffy-fit(style="background-image: url(images/ben-vogue.jpg)")
+        aside
+          pre
+            |{something here about me}
+
+      section.giffy-fit(style="background-image: url(images/ben-tired-1.jpg)")    
+        aside
+          pre
+            |{somethign here about me}         
+
       section
-        h2.bullets To Be Fair... Microsoft Was Not Insane
+        h2.bullets To Be Fair... Microsoft Were Not Total Jerks
         ul
           li W3C slow... lumbering
           li IE pushed forward Technologies (CSS) and more...
@@ -162,36 +235,21 @@ html
       section.giffy(style="background-image: url(images/youre_awesome_carl_sagan.gif)")
 
       section 
-        h2 Back To Standards
-        p 2000s IE Loses Popularity - Fragmentation Drives Standards Adoption
-        p Writing specific code for 4 browsers sucks
-
-      //- section.giffy-fit(style="background-image: url(images/ben-vogue.jpg)")
-
-      //- section.giffy-fit(style="background-image: url(images/ben-tired-1.jpg)")    
+        h2.bullets .... Back To Standards
+        ul
+          li 2000s IE Stagnates - Fragmentation Drives Standards Adoption
+          li Safari, Chrome and WebKit Appear
+          li Writing specific code for 4 browsers sucks
+          li Standards Complient Browsers Winning (yay firefox)
+          li the late 2000's Wide Adoption of Standards Across All Browsers
+          li IE introduces standards Mode in IE8 2009
       
       section
-        h2.bullets HTML & CSS
+        h2.bullets Life Is Good On The Dekstop
         ul
-          li By the late 2000's Wide Adoption of Standards Across All Browsers
           li Developers happy
-          li Oh yeah.. and Mozilla published a manifesto
-          li HTML5 - 'application' type features
-
-      section
-        h2.bullets Standards Are Slow
-        ul
-          li Working Draft
-          li Candidate Recommendation
-          li Proposed Recommendation
-          li W3C Recommendation
-          li But They Work - XMLHttpRequest & WebRTC
-        
-        aside HTML5 'Started' in 2008, Stable Recommendation Expected 2014! folks move ahead anyway WebRTC is a draft but already implemented.
-
-      section
-        h2 After 20 Years So We Have A Process That Works On Desktop Browsers
-        p Vendors are happy, developers are happy, innovation continues. But....
+          li Competition & Innovation HTML5
+          li and then this happens....
 
 
       section.giffy(style="background-image: url(images/AFP_Getty-60669433.jpg)")    
@@ -201,20 +259,37 @@ html
 
 
       section
-        h2.bullets Mobile Changed Everything
+        h2.bullets iOS & Android Changed Everything
         ul
-          li The Walls Went Up
-          li Apple & Google Were Gatekeepers
-          li The Web Was Second Class To Proprietary Apps
-          li Our manifesto in doubt!
-          li How Can Their Be An Open Web In This Environment?
+          li Mobile Usage Skyrocketed
+          li You Interact Over The Internet Via Apps
+          li 
+            strong OH SHIT... remember the manifesto?
+          li Interoperability - Nope.
+          li Decentralized Participation - Nope.
+          li Cost of participation low - Nope.
+          li Fragmentation not an issue - Nope.
+          li write once run (mostly anywhere) - Nope.
+          li no Gatekeepers - Hells Nope.
+          li Runs on Non Proprietary Standards! - Nope.
+
+
+      section.giffy-fit(style="background-image: url(images/nope.gif)")  
+
+      section
+        h2.bullets What If The Same Strategy on Desktop Was Applied To Mobile
+          ul
+            li HTML / CSS / JS For Apps
+            li APIs allowing the above to interact with a phone (gps battery etc)
+            li yes! yes! yes!      
 
       section.giffy(style="background-image: url(images/Firefox-OS-with-Fox.jpg)")    
-        h2.bullets A Mobile OS Built On Standards & 'Most Importantly Built In The Standards Way.
+        h2.bullets Firefox OS!
         ul
-          li mobile stuff goes here and transfer to craig
+          li Applying the Lessons Learned On Desktop To Mobile
 
         aside Break out about developing in the open etc. This may be really important
+
 
 
 
