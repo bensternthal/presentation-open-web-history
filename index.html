@@ -41,7 +41,7 @@ in our projects.<br>
 Setup next slide.. do whatever you need to do to stay awake    </pre>
         </aside>
       </section>
-      <section style="background-image: url(images/glue.gif)" class="giffy"></section>
+      <!--section.giffy(style="background-image: url(images/glue.gif)")-->
       <section style="background-image: url(images/manifesto.png)" class="giffy">
         <aside>
           <pre>Before we jump in, I want to take a moment to talk about how important web standards are.
@@ -52,19 +52,25 @@ They are so important that they were added as a specific item #6 what you see he
         </aside>
       </section>
       <section>
-        <h2 class="bullets">The Web Is A Public Resource</h2>
+        <h2 class="bullets">The Web Is A Public Resource: <br> Built On Open Standards</h2><strong>Which Gives Us</strong>
         <ul>
           <li>Interoperability</li>
           <li>Decentralized Participation</li>
+          <li>Non-proprietarty. No one owns it (although there are bullies)</li>
+          <li>Higher Chance Of Future Support
+            <hr>
+          </li>
           <li><strong>And my two cents...</strong></li>
-          <li>cost of participation low</li>
-          <li>fragmentation not an issue</li>
-          <li>write once run (mostly anywhere)</li>
-          <li>no Gatekeepers    </li>
+          <li>Cost of Participation Very Low</li>
+          <li>Fragmentation is not an issue</li>
+          <li>Write once run (mostly anywhere)</li>
+          <li>No Gatekeepers    </li>
           <li>Runs on Non Proprietary Standards!</li>
         </ul>
         <aside>
-          <pre>This really describes the web that we have today. Talk about creating a website.
+          <pre>This really describes the web that we have today. 
+<br>
+Talk about creating a website.
 <br>
 This does not describe mobile - explain why.               </pre>
         </aside>
@@ -84,38 +90,40 @@ This does not describe mobile - explain why.               </pre>
           <pre>Everyone knows this guy right?
 <br>
 At the very beginning we start to see an approach or philosophy of openess that 
-would later became an inegral part
-of the web.
+would later became an inegral part of the web.
 <br>
 Note way before this open standards had been succesfull note tcp/ip from 1979
 <br>
-Layering of open standards on existing open standards.          </pre>
+Layering of open standards on existing open standards. 
+<br>
+IMPORTANT - this is the philosophy of openess that embodied the development of the web 
+from the very beginning, and as mozilla grows we should be concious {something in here to work on}         </pre>
         </aside>
       </section>
       <section>
         <h2 class="bullet">After That Things Moved Quickly</h2>
         <ul>
-          <li><strong>1993 </strong>
+          <li><strong><br>1993<br></strong>
             <ul>
               <li>CERN agrees to allow anyone to use Web protocol and code royalty-free.</li>
               <li>NCSA release first alpha version of Marc Andreessen's "Mosaic for X"</li>
               <li>WWW (Port 80 HTTP) traffic measures 0.1% of NSF backbone traffic. </li>
             </ul>
           </li>
-          <li><strong>1994</strong>
+          <li><strong><br>1994<br></strong>
             <ul>
               <li>Marc Andreessen and colleagues leave NCSA to form "Mosaic Communications Corp" (later Netscape).</li>
               <li>World Wide Web Consortium founded. </li>
             </ul>
           </li>
-          <li><strong>1997</strong>
+          <li><strong><br>1997<br></strong>
             <ul>
               <li>W3C publishes first W3C Recommendation for HTML — HTML 3.2.</li>
               <li>IE 4 Released (Bundled With Windows)</li>
               <li>Browser Wars</li>
             </ul>
           </li>
-          <li><strong>1998</strong>
+          <li><strong><br>1998<br></strong>
             <ul>
               <li>Web Standards Project - Established to push agenda of standards</li>
             </ul>
@@ -123,23 +131,27 @@ Layering of open standards on existing open standards.          </pre>
         </ul>
       </section>
       <section>
-        <h2 class="bullets">What is A Standard?  </h2>
+        <h2 class="bullets">What is A "Web" Standard?  </h2>
         <ul>
           <li>A Mix Of Standards (JS) & Recommendations (HTML/CSS)</li>
           <li>Not All Standards Are Equal</li>
+          <li>
+            <hr>
+          </li>
           <li><strong>Standard Bodies</strong></li>
           <li>W3C, IETF, ISO, ECMA, Unicode Consortium, IANA</li>
           <li>Tries To Get Vendors To Agree</li>
           <li>Standards Making Is Slow Process...</li>
         </ul>
         <aside>
-          <pre>What is a standard. For us standar            
+          <pre>What is a standrd. In this context standards refer to how browsers should render HTML, CSS
+when you say width="100px" the standard 'recommends' exactly what this should do (More on this on a moment).            
 <br>
-W3C {EXPLAIN STANDARDS HERE AND SCOPE}
-Note w3c does not publish strict standards but rather strong recommendations.
-IE rapidly overtook netscape in market penetration. 1st browser war saw ms throwing money
-at IE and dominating the market. Even though we had an establised method for evolving standards
-ms went there own way.</pre>
+Note w3c does not publish strict standards but rather strong recommendations. This is true for HTML & CSS and differs
+from ECMA. Standards for programming languages are much stricter and should be thought of as rules not recommendation.
+<br>
+A js interpreter is expected to adhere to the ECMA standard, browsers area a little looser. They often integrate
+features before they are 'published' by the W3C.</pre>
         </aside>
       </section>
       <section>
@@ -163,42 +175,54 @@ But what happens when you do not follow the rules.                  </pre>
       <section>
         <h2>Let's Talk About Microsoft In The Late 90's and Early 2000's </h2>
         <aside>
-          <pre>Microsoft dominated the browser market and used their dominance to implment Proprietary
-features. Developers would spend the majority of their time on the browser with
-the most eyeballs. Solidifying their market share.</pre>
+          <pre><br>
+In the late nineties IE rapidly overtook netscape in market penetration. 1st browser war saw ms throwing money
+at IE, integrating the browser into their OS and dominating the market.
+<br>
+It was during this time that MS Even though we had an establised method for evolving standards
+ms went there own way.
+<br>
+For developers this was awful. You needed to spend most of your time developing for the browser with the
+largest audience. Remember those "Best Viewed in IE badges.
+<br>
+Developing solely for IEs Proprietary standards broke most of the bullets we previously mentioned
+and would bake in problems later. Even today there are many applications that only work in IE6 because
+that specific version had a Proprietary feature that was coded too.</pre>
         </aside>
       </section>
       <section style="background-image: url(images/ie.gif)" class="giffy-fit"></section>
       <section>
         <h2>IE: Didn't Like To Follow Standards</h2><br><img src="images/border-box-model.png">
         <aside>
-          IE bundles a ton of Proprietary features, ignores W3c recommendations. 
-          <br>
-          imagine coding for ie, you have to now code once for ie and again for other browsers following
-          w3c recs. what happens when there are even more browsers on the market.. or mobile?
+          <pre>IE bundles a ton of Proprietary features, ignores W3c recommendations. 
+<br>
+imagine coding for ie, you have to now code once for ie and again for other browsers following
+w3c recs. what happens when there are even more browsers on the market.. or mobile?</pre>
         </aside>
       </section>
       <section style="background-image: url(images/yogscast.gif)" class="giffy">
         <h2>Creates A Nightmare For Developers</h2>
         <p class="quote">"Microsoft is committed to implementing the Internet standards that make sense to allow our customers to build great solutions. As standards emerge, we evaluate them to see which standards might best serve our customers' needs."</p>
         <aside>
-          Someone forgot what the word standard means
-          <br>
-          Developing cross-browser websites was incredibly painful.
-          The promise of write once run everywhere failed. You had to code for ie and everybody else
-          Who knows if the features you coded against would exist in the future?
-          Supporting multiple versions of IE became even more of a pain.
-          Not just IE vs Netscape but IE6 vs IE7 vs IE8 vs Nestscape 
+          <pre>Someone forgot what the word standard means
+<br>
+Developing cross-browser websites was incredibly painful.
+The promise of write once run everywhere failed. You had to code for ie and everybody else
+Who knows if the features you coded against would exist in the future?
+Supporting multiple versions of IE became even more of a pain.
+Not just IE vs Netscape but IE6 vs IE7 vs IE8 vs Nestscape </pre>
         </aside>
       </section>
       <section style="background-image: url(images/ben-vogue.jpg)" class="giffy-fit">
         <aside>
-          <pre>{something here about me}</pre>
+          <pre>Another case study me. Here I am at my first job out of college happily coding
+standards compliant HTML & CSS.</pre>
         </aside>
       </section>
       <section style="background-image: url(images/ben-tired-1.jpg)" class="giffy-fit">   
         <aside>
-          <pre>{somethign here about me}         </pre>
+          <pre>And here I am after a few months making fixes for multiple version of IE on the Process
+& mac. And we didnt even have mobile yet.        </pre>
         </aside>
       </section>
       <section>
@@ -210,8 +234,9 @@ the most eyeballs. Solidifying their market share.</pre>
           <li>^ responsible for Ajax, Web 2.0 .. why we have nice things.</li>
         </ul>
         <aside>
-          When microsoft innovated - they did it in a way outside of the standards process. And used
-          innovation to develop market share not to push the web forward. Remember designed for IE
+          <pre>When microsoft innovated - they did it in a way outside of the standards process. And did so privately.
+They used innovation to develop market share not to push the web forward. Remember designed for IE.
+However some of their Proprietary standards eventually were adopted XMLHttpRequest for example.</pre>
         </aside>
       </section>
       <section style="background-image: url(images/youre_awesome_carl_sagan.gif)" class="giffy"></section>
@@ -230,7 +255,8 @@ the most eyeballs. Solidifying their market share.</pre>
         <h2 class="bullets">Life Is Good On The Dekstop</h2>
         <ul>
           <li>Developers happy</li>
-          <li>Competition & Innovation HTML5</li>
+          <li>Competition & Innovation </li>
+          <li>HTML5 Booyah!</li>
           <li>and then this happens....</li>
         </ul>
       </section>
@@ -238,37 +264,52 @@ the most eyeballs. Solidifying their market share.</pre>
         <h2>Can I Install Firefox On This Thing?</h2>
       </section>
       <section style="background-image: url(images/its_classified_barack_obama.gif)" class="giffy-fit">   </section>
+      <section style="background-image: url(images/sad-firefox.jpg)" class="giffy"> 
+        <h2>Why U Hate Freedom?</h2>
+      </section>
       <section>
         <h2 class="bullets">iOS & Android Changed Everything</h2>
         <ul>
           <li>Mobile Usage Skyrocketed</li>
-          <li>You Interact Over The Internet Via Apps</li>
+          <li>You Interact Through Apps Not A Browser</li>
           <li><strong>OH SHIT... remember the manifesto?</strong></li>
           <li>Interoperability - Nope.</li>
           <li>Decentralized Participation - Nope.</li>
-          <li>Cost of participation low - Nope.</li>
-          <li>Fragmentation not an issue - Nope.</li>
-          <li>write once run (mostly anywhere) - Nope.</li>
-          <li>no Gatekeepers - Hells Nope.</li>
+          <li>Cost of Participation low - Nope.</li>
+          <li>Fragmentation Not an Issue - Nope.</li>
+          <li>Write Once Run Anywhere - Nope.</li>
+          <li>No Gatekeepers - Hells Nope.</li>
           <li>Runs on Non Proprietary Standards! - Nope.</li>
         </ul>
       </section>
       <section style="background-image: url(images/nope.gif)" class="giffy-fit"> </section>
       <section>
-        <h2 class="bullets">What If The Same Strategy on Desktop Was Applied To Mobile
-          <ul>
-            <li>HTML / CSS / JS For Apps</li>
-            <li>APIs allowing the above to interact with a phone (gps battery etc)</li>
-            <li>yes! yes! yes!      </li>
-          </ul>
-        </h2>
+        <h2 class="bullets">What If The Same Strategy on Desktop Was Applied To Mobile</h2>
+        <p>HTML / CSS / JS For Apps</p>
+        <p>APIs allowing the above to interact with a phone (gps battery etc)</p>
+        <P>Standards developed and discussed in the open (We heartTim Berners Lee)</P>
+        <p>yes! yes! yes!      </p>
       </section>
       <section style="background-image: url(images/Firefox-OS-with-Fox.jpg)" class="giffy">   
         <h2 class="bullets">Firefox OS!</h2>
         <ul>
           <li>Applying the Lessons Learned On Desktop To Mobile</li>
+          <li>Making sure mobile is interoperable and remains a public resource.</li>
+          <li>Remember the manifesto</li>
+          <li>Open Web Standards are critical to success.</li>
         </ul>
         <aside>Break out about developing in the open etc. This may be really important</aside>
+      </section>
+      <section>
+        <h2 class="bullet">{some non crappy title}</h2>
+        <hr>
+        <ul>
+          <li>Work In The Open .. For real.. everytime we use basecamp or keep a doc private my cat cries.</li>
+          <li>Support Collaboration & Be Inclusive</li>
+          <li>Campaigns Can Market Products And Reflect The Values Put Forth In The Manifesto</li>
+          <li>'Mad Men' Marketing {eh maybe not mention this}</li>
+          <li>Remember: We Work In The Public Interest<strong>Enjoy! :)</strong><a href="http://twitter.com/bensternthal"> -@bensternthal</a></li>
+        </ul>
       </section>
     </article>
     <script src="scripts/scripts.js"></script>
