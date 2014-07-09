@@ -256,7 +256,7 @@ h1 {
 h2 {
   font-size: 42px;
   letter-spacing: -1px;
-  margin-bottom: 0.8em;
+  margin-bottom: 0.5em;
   border-bottom: 2px solid #404040;
 }
 h3 {
@@ -307,6 +307,7 @@ a {
 }
 .bespoke-slide aside {
   display: none;
+  line-height: 2em;
 }
 .quote {
   font-weight: 900;
